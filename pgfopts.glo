@@ -1,0 +1,5 @@
+\glossaryentry{v1.0> =General:>First public release|hdpindex{}}{1}
+\glossaryentry{v2.0> =General:>Complete internal rewrite|hdpindex{}}{1}
+\glossaryentry{v2.1> =General:>Allow for \texttt  {.unknown} handler for class options|hdpindex{}}{1}
+\glossaryentry{v2.1a> =General:>Fix incorrect \cs  {Provides\dots  } line|hdpindex{}}{1}
+\glossaryentry{v2.0> =General:>New \cs  {ProcessPgfPackageOptions} macro|hdpindex{}}{3}
