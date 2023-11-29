@@ -35,7 +35,7 @@
 \usepackage{xspace}
 \usepackage[font=footnotesize,labelfont=bf]{caption}
 \usepackage{physics}
-\usepackage{tikz-feynman}
+%\usepackage{tikz-feynman}
 \usepackage{mathtools}
 \usepackage{subcaption}
 \usepackage{array}
@@ -443,24 +443,7 @@ where $i\in\{n,r,k\}$ and $\expval{X}$ is the ensemble average of the quantity $
 
 \begin{figure}[h]
 \centering
-\begin{tikzpicture}
-  \begin{feynman}
-    {\(e^+\)}\vertex (a);
-    \vertex [below right=of a] (b);
-    \vertex [below left=of b] (c) {\(e^-\)};
-    \vertex [right=of b] (d);
-    \vertex [above right=of d] (e) {\(\tau^+\)};
-    \vertex [below right=of d] (f){\(\tau^-\)};
-    
-    \diagram* {
-      (b) -- [fermion, reversed momentum'={[arrow shorten=0.3]\scriptsize\(p_+\)}] (a),
-      (c) -- [fermion, momentum'={[arrow shorten=0.3]\scriptsize\(p_-\)}] (b),
-      (b) -- [photon, edge label=\(\gamma\)] (d),
-      (e) -- [fermion, reversed momentum'={[arrow shorten=0.3]\scriptsize\(k_+\)}] (d),
-      (d) -- [fermion, momentum'={[arrow shorten=0.3]\scriptsize\(k_-\)}] (f)
-    };
-  \end{feynman}
-\end{tikzpicture}
+\includegraphics[scale=1]{diagram.pdf}
 \caption{The tree-level Feynman diagram for the considered process. We omit $\PZ$ and $\PH$ contributions as they are negligible at $\sqrt{s} = 10.579$~\GeV. }
 \label{fig:diag}
 \end{figure}
@@ -1038,5 +1021,5 @@ ML fit     & $0.6952$ & $0.0011$ & $1.4283$ & $0.0031$ \\
 \twocolumn  
 
 \bibliographystyle{JHEP}   
-\bibliography{bell@belle.bib} 
+\bibliography{bell_at_belle.bib} 
 \end{document}
